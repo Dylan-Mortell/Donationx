@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.annotation.SuppressLint
-import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -49,6 +48,7 @@ import ie.setu.EventPlanner.navigation.allDestinations
 import ie.setu.EventPlanner.ui.components.general.MenuItem
 import ie.setu.EventPlanner.ui.general.BottomAppBarProvider
 import ie.setu.EventPlanner.ui.theme.EventPlannerTheme
+import ie.setu.donationx.R
 
 
 @AndroidEntryPoint
