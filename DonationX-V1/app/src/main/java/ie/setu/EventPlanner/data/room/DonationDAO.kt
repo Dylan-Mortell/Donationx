@@ -30,6 +30,10 @@ interface DonationDAO {
     @Query("SELECT * FROM eventmodel WHERE id=:id")
     fun get(id: Int): Flow<EventModel>
 
+    @Query("SELECT * FROM eventmodel WHERE dateDonated = :date LIMIT 1")
+    suspend fun getByDate(date: String): EventModel?
+
+
 }
 
 @Provides

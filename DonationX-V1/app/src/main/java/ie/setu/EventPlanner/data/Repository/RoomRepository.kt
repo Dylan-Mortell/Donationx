@@ -54,6 +54,12 @@ constructor(private val serviceApi: DonationService)  {
             val wrapper = serviceApi.delete(email, donation._id)
             wrapper
         }
+
     }
+
+    suspend fun getEventByDate(date: String): EventModel? {
+        return DonationDAO.getByDate(date)
+    }
+
 }
 
