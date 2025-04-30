@@ -21,6 +21,17 @@ data class EventModel(
     val dateDonated: Date = Date()
 )
 
+//additional code for planner
+@Entity
+data class PlannerModel(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+    @DocumentId val _id: String = "N/A",
+    val title: String = "",
+    val date: Date = Date(),
+    val isCompleted: Boolean = false
+)
+
 val fakeDonations = List(30) { i ->
     EventModel(id = 12345 + i,
         _id = "12345" + i,
