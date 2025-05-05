@@ -22,4 +22,5 @@
         <string name="plannerTitle">Personal Planner</string>
         <string name="plannerSubtitle">Create and organise tasks</string>
         <string name="enter_task">Enter task</string>
+        <string name="maps_api_key">YOUR_API_KEY_HERE</string>
 </resources>

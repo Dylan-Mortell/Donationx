@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.jetbrainsCompose)
-    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.android.ksp)
     alias(libs.plugins.google.gms.google.services)
@@ -66,7 +65,7 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    implementation(libs.androidx.material3.view)
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.appcompat)
@@ -121,4 +120,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.gson)
+
+    implementation(libs.androidx.lifecycle.viewmodel.savedstate)
 }

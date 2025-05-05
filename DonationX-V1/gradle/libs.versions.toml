@@ -1,113 +1,95 @@
 [versions]
-agp = "8.8.0"
+agp = "8.3.0"
 kotlin = "2.0.20"
+compose-plugin = "1.5.11"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-lifecycleRuntimeKtx = "2.8.7"
-activityCompose = "1.10.0"
-composeBom = "2025.01.01"
-materialIconsExtended = "1.7.7"
+lifecycleRuntimeKtx = "2.8.1"
+activityCompose = "1.8.2"
+composeBom = "2024.05.00"
+materialIconsExtended = "1.6.5"
 numberPicker = "1.0.3"
-compose-plugin = "1.8.0-alpha01"
 timber = "5.0.1"
-navigationCompose = "2.8.6"
-
-# V3
+navigationCompose = "2.7.7"
 hiltAndroid = "2.52"
-hiltAndroidCompiler = "2.52"
 hiltNavigationCompose = "1.2.0"
-roomRuntime = "2.6.1"
+room = "2.6.1"
 ksp = "2.0.20-1.0.25"
-
-# V4
+retrofit = "2.11.0"
 converterGson = "2.11.0"
 gson = "2.11.0"
-retrofit = "2.11.0"
-
-# V5
 googleGmsGoogleServices = "4.4.2"
 playServicesAuth = "21.3.0"
 firebaseAuth = "23.2.0"
 firebaseFirestore = "25.1.3"
-
-# V7
 googleid = "1.1.1"
 coilCompose = "2.6.0"
-
-accompanist = "0.24.13-rc"
-
-# V9
-playServicesLocation = "com.google.android.gms:play-services-location:21.3.0"
-playServicesMaps = "com.google.android.gms:play-services-maps:19.1.0"
-mapsCompose = "com.google.maps.android:maps-compose:4.1.1"
+accompanist = "0.34.0"
+playServicesLocation = "21.3.0"
+playServicesMaps = "19.1.0"
+mapsCompose = "4.1.1"
 appcompat = "1.7.0"
 cardview = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "materialIconsExtended" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-material3-view = { group = "com.google.android.material", name = "material", version = "1.11.0" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
-# Location & Maps
 play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
 
-# Accompanist
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
 
 numberPicker = { module = "com.chargemap.compose:numberpicker", version.ref = "numberPicker" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
-# Hilt
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
 
-# ViewModel
-androidx-lifecycle-viewmodel-savedstate = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycleRuntimeKtx" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 
-# Room
-androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
-androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
-androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
-
-# Retrofit
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 
-# Firebase & Google
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
 googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
 
-# Coil
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 
+
+androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version = "2.7.0" }
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version = "1.6.10" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 kotlin-android-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

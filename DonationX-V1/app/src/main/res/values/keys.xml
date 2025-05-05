@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<string name = "web_client_id"> 939033679570-a29a6lco5824fknl3v1j0mraaebjt518.apps.googleusercontent.com</string>
-
-<resources></resources>
+<resources>
+    <string name="web_client_id">939033679570-a29a6lco5824fknl3v1j0mraaebjt518.apps.googleusercontent.com</string>
+</resources>

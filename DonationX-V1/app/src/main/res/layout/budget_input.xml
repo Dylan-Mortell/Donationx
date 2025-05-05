@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginbkg"
+    tools:context=".BudgetActivity">
+
+    <!-- CardView for budget input -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/cardview_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Budget"
+                android:id="@+id/budgetHeader"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/purple"
+                android:paddingBottom="16dp"/>
+
+            <!-- Total Budget Input -->
+            <EditText
+                android:id="@+id/editTextTotalBudget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Total Budget (e.g. 1000)"
+                android:background="@drawable/custom_edittext"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Expense Name -->
+            <EditText
+                android:id="@+id/editTextExpenseName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Expense Name (e.g. Catering)"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Expense Amount -->
+            <EditText
+                android:id="@+id/editTextExpenseAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Expense Amount (e.g. 250)"
+                android:background="@drawable/custom_edittext"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Add Expense Button -->
+            <Button
+                android:id="@+id/buttonAddExpense"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Add Expense"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                app:cornerRadius="20dp" />
+
+            <!-- Budget Status -->
+            <TextView
+                android:id="@+id/textViewBudgetStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remaining: $0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="24dp"
+                android:textColor="@color/color_secondary"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Back/Navigation Option -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Back to Planner"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:id="@+id/backToPlannerText"
+        android:textColor="@color/purple_200"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>
