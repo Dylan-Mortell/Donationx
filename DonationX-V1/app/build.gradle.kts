@@ -71,6 +71,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.cardview)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.media3.effect)
 
     // Debug & Testing
     testImplementation(libs.junit)

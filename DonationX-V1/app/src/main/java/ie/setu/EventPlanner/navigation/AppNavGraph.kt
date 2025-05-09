@@ -26,7 +26,7 @@ fun NavHostProvider(
     ) {
         composable(route = Donate.route) {
             // Call our 'Donate' Screen Here
-            ScreenDonate(modifier = modifier)  // No need to pass donations
+            ScreenDonate(modifier = modifier)
         }
         composable(route = Report.route) {
             // Call our 'Report' Screen Here

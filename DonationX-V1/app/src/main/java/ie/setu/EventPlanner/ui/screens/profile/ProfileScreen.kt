@@ -1,7 +1,19 @@
 package ie.setu.EventPlanner.ui.screens.profile
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.runtime.Composable
+import android.net.Uri
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import ie.setu.EventPlanner.R
+import ie.setu.EventPlanner.ui.components.general.ShowPhotoPicker
+import ie.setu.EventPlanner.ui.components.general.HeadingTextComponent
+import ie.setu.EventPlanner.ui.screens.login.LoginViewModel
+import ie.setu.EventPlanner.ui.screens.register.RegisterViewModel
 
 @Composable
 fun ProfileScreen(
