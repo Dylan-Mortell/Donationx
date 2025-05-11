@@ -25,11 +25,9 @@ fun NavHostProvider(
         modifier = Modifier.padding(paddingValues = paddingValues)
     ) {
         composable(route = Donate.route) {
-            // Call our 'Donate' Screen Here
             ScreenDonate(modifier = modifier)
         }
         composable(route = Report.route) {
-            // Call our 'Report' Screen Here
             ScreenReport(
                 modifier = modifier,
                 onClickDonationDetails = { donationId: Int ->
